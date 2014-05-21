@@ -199,40 +199,40 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libtime_genoff.so:system/lib/libtime_genoff.so
 
 # Radio
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/bin/mdm_helper:system/bin/mdm_helper \
-    $(LOCAL_PATH)/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
-    $(LOCAL_PATH)/proprietary/bin/netmgrd:system/bin/netmgrd \
-    $(LOCAL_PATH)/proprietary/bin/qmuxd:system/bin/qmuxd \
-    $(LOCAL_PATH)/proprietary/bin/rild:system/bin/rild \
-    $(LOCAL_PATH)/proprietary/bin/rmt_storage:system/bin/rmt_storage \
-    $(LOCAL_PATH)/proprietary/bin/sec-ril:system/bin/sec-ril \
-    $(LOCAL_PATH)/proprietary/etc/init.qcom.mdm_links.sh:system/etc/init.qcom.mdm_links.sh \
-    $(LOCAL_PATH)/proprietary/etc/init.qcom.modem_links.sh:system/etc/init.qcom.modem_links.sh \
-    $(LOCAL_PATH)/proprietary/etc/init.qcom.ril.sh:system/etc/init.qcom.ril.sh \
-    $(LOCAL_PATH)/proprietary/lib/libcordon.so:system/lib/libcordon.so \
-    $(LOCAL_PATH)/proprietary/lib/libdiag.so:system/lib/libdiag.so \
-    $(LOCAL_PATH)/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
-    $(LOCAL_PATH)/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \
-    $(LOCAL_PATH)/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
-    $(LOCAL_PATH)/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
-    $(LOCAL_PATH)/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
-    $(LOCAL_PATH)/proprietary/lib/libqdi.so:system/lib/libqdi.so \
-    $(LOCAL_PATH)/proprietary/lib/libqdp.so:system/lib/libqdp.so \
-    $(LOCAL_PATH)/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
-    $(LOCAL_PATH)/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
-    $(LOCAL_PATH)/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
-    $(LOCAL_PATH)/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
-    $(LOCAL_PATH)/proprietary/lib/libril.so:system/lib/libril.so
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/proprietary/bin/mdm_helper:system/bin/mdm_helper \
+#    $(LOCAL_PATH)/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
+#    $(LOCAL_PATH)/proprietary/bin/netmgrd:system/bin/netmgrd \
+#    $(LOCAL_PATH)/proprietary/bin/qmuxd:system/bin/qmuxd \
+#    $(LOCAL_PATH)/proprietary/bin/rild:system/bin/rild \
+#    $(LOCAL_PATH)/proprietary/bin/rmt_storage:system/bin/rmt_storage \
+#    $(LOCAL_PATH)/proprietary/bin/sec-ril:system/bin/sec-ril \
+#    $(LOCAL_PATH)/proprietary/etc/init.qcom.mdm_links.sh:system/etc/init.qcom.mdm_links.sh \
+#    $(LOCAL_PATH)/proprietary/etc/init.qcom.modem_links.sh:system/etc/init.qcom.modem_links.sh \
+#    $(LOCAL_PATH)/proprietary/etc/init.qcom.ril.sh:system/etc/init.qcom.ril.sh \
+#    $(LOCAL_PATH)/proprietary/lib/libcordon.so:system/lib/libcordon.so \
+#    $(LOCAL_PATH)/proprietary/lib/libdiag.so:system/lib/libdiag.so \
+#    $(LOCAL_PATH)/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
+#    $(LOCAL_PATH)/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \
+#    $(LOCAL_PATH)/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
+#    $(LOCAL_PATH)/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
+#    $(LOCAL_PATH)/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
+#    $(LOCAL_PATH)/proprietary/lib/libqdi.so:system/lib/libqdi.so \
+#    $(LOCAL_PATH)/proprietary/lib/libqdp.so:system/lib/libqdp.so \
+#    $(LOCAL_PATH)/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
+#    $(LOCAL_PATH)/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
+#    $(LOCAL_PATH)/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
+#    $(LOCAL_PATH)/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
+#    $(LOCAL_PATH)/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
+#    $(LOCAL_PATH)/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
+#    $(LOCAL_PATH)/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
+#    $(LOCAL_PATH)/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
+#    $(LOCAL_PATH)/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
+#    $(LOCAL_PATH)/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
+#    $(LOCAL_PATH)/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
+#    $(LOCAL_PATH)/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
+#    $(LOCAL_PATH)/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
+#    $(LOCAL_PATH)/proprietary/lib/libril.so:system/lib/libril.so
 
 # Sensors
 PRODUCT_COPY_FILES += \
