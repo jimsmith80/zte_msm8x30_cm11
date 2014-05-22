@@ -12,13 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Test
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/etc/test.txt:system/etc/test.txt
-
 # Radio
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/bin/mdm_helper:system/bin/mdm_helper \ 
+    $(LOCAL_PATH)/proprietary/bin/mdm_helper:system/bin/mdm_helper \
     $(LOCAL_PATH)/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
     $(LOCAL_PATH)/proprietary/bin/netmgrd:system/bin/netmgrd \
     $(LOCAL_PATH)/proprietary/bin/qmuxd:system/bin/qmuxd \
@@ -30,7 +26,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
     $(LOCAL_PATH)/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \
     $(LOCAL_PATH)/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
-    $(LOCAL_PATH)/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \ *
     $(LOCAL_PATH)/proprietary/lib/libqdi.so:system/lib/libqdi.so \
     $(LOCAL_PATH)/proprietary/lib/libqdp.so:system/lib/libqdp.so \
     $(LOCAL_PATH)/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
