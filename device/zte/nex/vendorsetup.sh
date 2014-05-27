@@ -1,0 +1,2 @@
+add_lunch_combo cm_nex-userdebug
+add_lunch_combo cm_nex-eng

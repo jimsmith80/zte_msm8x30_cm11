@@ -1,0 +1,18 @@
+# system.prop for nex
+#
+
+# cannot take spaces
+rild.libargs=-d /dev/smd0
+DEVICE_PROVISIONED=1
+ro.config.multimode_cdma=true
+ril.subscription.types=NV
+persist.radio.mode_pref_nv10=1
+telephony.lteOnCdmaDevice=1
+persist.radio.tdscdma_present=2
+ro.telephony.default_network=4
+ro.com.google.clientidbase.am=android-sprint-us
+ro.com.google.clientidbase.yt=android-sprint-us
+ro.com.google.clientidbase.ms=android-sprint-us
+ro.cdma.home.operator.numeric=310120
+ro.cdma.home.operator.alpha=Sprint
+ro.sf.lcd_density=320
