@@ -32,6 +32,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
     $(LOCAL_PATH)/proprietary/lib/libidl.so:system/lib/libidl.so \
     $(LOCAL_PATH)/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
+    $(LOCAL_PATH)/proprietary/lib/libqcci_adc.so:system/lib/libqcci_adc.so \
     $(LOCAL_PATH)/proprietary/lib/libqmi.so:system/lib/libqmi.so \
     $(LOCAL_PATH)/proprietary/lib/libqmi_cci.so:system/lib/libqmi_cci.so \
     $(LOCAL_PATH)/proprietary/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so \
