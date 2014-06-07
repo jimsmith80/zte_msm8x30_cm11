@@ -1,6 +1,5 @@
 # system.prop for warplte
 #
-
 # cannot take spaces
 rild.libargs=-d /dev/smd0
 DEVICE_PROVISIONED=1
@@ -14,5 +13,85 @@ ro.com.google.clientidbase.am=android-sprint-us
 ro.com.google.clientidbase.yt=android-sprint-us
 ro.com.google.clientidbase.ms=android-sprint-us
 ro.cdma.home.operator.numeric=310120
-ro.cdma.home.operator.alpha=Sprint
+ro.cdma.home.operator.alpha=Boost Mobile
 ro.sf.lcd_density=320
+#
+#system props for the MM modules
+media.stagefright.enable-player=true
+media.stagefright.enable-http=true
+media.stagefright.enable-aac=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-fma2dp=true
+media.stagefright.enable-scan=true
+mmp.enable.3g2=true
+#
+# system props for the data modules
+#
+ro.use_data_netmgrd=true
+
+#system props for time-services
+persist.timed.enable=true
+#
+# System props for audio
+persist.audio.fluence.mode=endfire
+persist.audio.vr.enable=false
+persist.audio.handset.mic=analog
+persist.audio.lowlatency.rec=false
+#
+# System prop to select audio resampler quality
+af.resampler.quality=255
+# System prop to select MPQAudioPlayer by default on mpq8064
+mpq.audio.decode=true
+#
+#system prop for Bluetooth hci transport
+ro.qualcomm.bt.hci_transport=smd
+#
+# system prop for requesting Master role in incoming Bluetooth connection.
+#
+ro.bluetooth.request.master=true
+#
+# system prop for Bluetooth Auto connect for remote initated connections
+#
+ro.bluetooth.remote.autoconnect=true
+# system property for Bluetooth discoverability time out in seconds
+# 0: Always discoverable
+#debug.bt.discoverable_time=0
+#
+#system prop for switching gps driver to qmi
+persist.gps.qmienabled=true
+#
+# System props for telephony
+# System prop to turn on CdmaLTEPhone always
+# removed by yangyiming 2013.01.17
+# telephony.lteOnCdmaDevice=1
+#
+# System prop for sending transmit power request to RIL during WiFi hotspot on/off
+#
+ro.ril.transmitpower=true
+#
+#snapdragon value add features
+ro.qc.sdk.audio.ssr=false
+##fluencetype can be "fluence" or "fluencepro" or "none"
+ro.qc.sdk.audio.fluencetype=none
+ro.qc.sdk.camera.facialproc=false
+#
+#snapdragon value add features
+#
+ro.qc.sdk.gestures.camera=false
+#property to force camera shutter sound on speaker
+ro.camera.sound.forced=0
+#
+#ZTE_LCF_20130121 property to turned off Qualcomm
+#
+net.early.sockets=0
+persist.service.adb.enable=1                                                    
+persist.service.debuggable=1
+persist.sys.usb.config=mtp,adb
+#
+ro.itson.path=/carrier/itson/resources/
+ro.emode.flashtest=true
+ro.emode.fm=0
+ro.emode.keytest=camera
+ro.emmc=1
+ro.emode.camera.focus=true
+keyguard.no_require_sim=true
