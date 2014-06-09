@@ -59,10 +59,6 @@ ro.bluetooth.remote.autoconnect=true
 #system prop for switching gps driver to qmi
 persist.gps.qmienabled=true
 #
-# System props for telephony
-# System prop to turn on CdmaLTEPhone always
-#
-telephony.lteOnCdmaDevice=1
 #
 # System prop for sending transmit power request to RIL during WiFi hotspot on/off
 #
