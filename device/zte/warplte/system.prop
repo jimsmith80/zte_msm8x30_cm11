@@ -4,7 +4,6 @@
 rild.libargs=-d /dev/smd0
 DEVICE_PROVISIONED=1
 ro.config.multimode_cdma=true
-ril.subscription.types=NV
 persist.radio.mode_pref_nv10=1
 telephony.lteOnCdmaDevice=1
 persist.radio.tdscdma_present=2
@@ -13,7 +12,7 @@ ro.com.google.clientidbase.am=android-sprint-us
 ro.com.google.clientidbase.yt=android-sprint-us
 ro.com.google.clientidbase.ms=android-sprint-us
 ro.cdma.home.operator.numeric=310120
-ro.cdma.home.operator.alpha=Boost Mobile
+ro.cdma.home.operator.alpha=Sprint
 ro.sf.lcd_density=320
 #
 #system props for the MM modules
@@ -28,7 +27,7 @@ mmp.enable.3g2=true
 # system props for the data modules
 #
 ro.use_data_netmgrd=true
-
+#
 #system props for time-services
 persist.timed.enable=true
 #
@@ -62,8 +61,8 @@ persist.gps.qmienabled=true
 #
 # System props for telephony
 # System prop to turn on CdmaLTEPhone always
-# removed by yangyiming 2013.01.17
-# telephony.lteOnCdmaDevice=1
+#
+telephony.lteOnCdmaDevice=1
 #
 # System prop for sending transmit power request to RIL during WiFi hotspot on/off
 #

@@ -36,13 +36,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
     packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
 
-
-# Common overlay
-DEVICE_PACKAGE_OVERLAYS += device/zte/msm8x30-common/overlay
-
 # Device uses high-density artwork where available
-PRODUCT_AAPT_CONFIG := normal hdpi
-PRODUCT_AAPT_PREF_CONFIG := hdpi
+PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # We have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
@@ -67,12 +63,13 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    audio_policy.msm8960 \
-    audio.primary.msm8960 \
-    audio.a2dp.default \
-    audio.usb.default \
-    audio.r_submix.default \
-    libaudio-resampler
+	alsa.msm8960 \
+	audio.a2dp.default \
+        audio_policy.msm8960 \
+	audio.primary.msm8960 \
+	audio.usb.default \
+	audio.r_submix.default \
+	libaudio-resampler
 
 # Media
 PRODUCT_PACKAGES += \
@@ -206,7 +203,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=1 \
     persist.hwc.mdpcomp.enable=true \
     debug.mdpcomp.logs=0 \
-    ro.telephony.ril_class=SamsungQualcommRIL \
+    ro.telephony.ril_class=QualcommSharedRIL \
     ro.telephony.call_ring.multiple=0
 
 # For userdebug builds
